@@ -1,461 +1,471 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Poppins, sans-serif;
-    list-style: none;
-    text-decoration: none;
-    color: white;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+  list-style: none;
+  text-decoration: none;
+  color: white;
 }
 
 body {
-    background-color: black;
-    height: 100vh;
+  background-color: black;
+  height: 100vh;
 }
 
 header {
-    position: fixed;
-    top: 0;
-    z-index: 100;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: transparent;
-    opacity: 0.9;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  opacity: 0.9;
 }
 
-
 header .logo {
-    color: white;
-    font-weight: 600;
-    font-size: 30px;
-    font-family: Poppins;
-    font-weight: bold;
+  color: white;
+  font-weight: 600;
+  font-size: 30px;
+  font-family: Poppins;
+  font-weight: bold;
 }
 
 .navlist {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
-.navlist li a, .logo{
-    color: white;
+.navlist li a,
+.logo {
+  color: white;
 }
 
 .navlist li a {
-    border-bottom: 2px solid transparent;
-    font-weight: 400;
-    font-size: 1rem;
-    transition: all .5s ease;
+  border-bottom: 2px solid transparent;
+  font-weight: 400;
+  font-size: 1rem;
+  transition: all 0.5s ease;
 }
 
 .navlist li a:hover {
-    border-bottom: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
 #main-icon {
-    /* display: none; */
-    color: white;
-    font-size: 30px;
-    border-radius: 50%;
-    background-color: black;
-    padding: 5px;
-    cursor: pointer;
-    z-index: 101;
+  /* display: none; */
+  color: white;
+  font-size: 30px;
+  border-radius: 50%;
+  background-color: black;
+  padding: 5px;
+  cursor: pointer;
+  z-index: 101;
 }
 
-
 #main-toggle {
-    display: none;
+  display: none;
 }
 
 .main-icon-action {
-    display: none;
+  display: none;
 }
 
 .curriculum {
-    background: linear-gradient(234.9deg, rgb(113, 72, 18) 0%, rgb(67, 52, 11) 25%, black 75% );
-    top: 60;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    place-items: center;
-    gap: 2rem;
-    height: 500px;
+  background: linear-gradient(
+    234.9deg,
+    rgb(113, 72, 18) 0%,
+    rgb(67, 52, 11) 25%,
+    black 75%
+  );
+  top: 60;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  gap: 2rem;
+  height: 500px;
 }
 
 .curriculum-text {
-    margin-left: 15%;
+  margin-left: 15%;
 }
 
 .curriculum-text h5 {
-    font-size: 1rem;
-    margin-bottom: 10px;
-    font-weight: 400;
-    letter-spacing: 10px;
-    text-transform: uppercase;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  font-weight: 400;
+  letter-spacing: 10px;
+  text-transform: uppercase;
 }
 
 .curriculum-text h1 {
-    font-size: 2rem;
-    font-weight: 800;
-    margin: 0 0 30px;
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0 0 30px;
 }
 
 .curriculum-text p {
-    font-size: 14px;
-    letter-spacing: -0.2px;
-    margin: 0 0 30px;
-    line-height: 26px;
-    width: 80%;
-    font-weight: 200;
-    font-family: Poppins;
+  font-size: 14px;
+  letter-spacing: -0.2px;
+  margin: 0 0 30px;
+  line-height: 26px;
+  width: 80%;
+  font-weight: 200;
+  font-family: Poppins;
 }
 
 .curriculum-text .button-cv {
-    border-radius: 20px;
-    background: white;
-    padding: 5px 50px 5px 10px;
-    border: none;
-    transition: all 1s ease-in-out;
-    cursor: pointer;
-    
-}                                                     /* button */
-.curriculum-text .button-cv:hover{
-    background: transparent;
-    box-shadow: 0.4px 0.1px 6px 1px white;
-    transform: translateX(4px);
-    padding: 5px 10px 5px 10px;
+  border-radius: 20px;
+  background: white;
+  padding: 5px 50px 5px 10px;
+  border: none;
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+} /* button */
+.curriculum-text .button-cv:hover {
+  background: transparent;
+  box-shadow: 0.4px 0.1px 6px 1px white;
+  transform: translateX(4px);
+  padding: 5px 10px 5px 10px;
 }
 
 .curriculum-text .button-cv .cv {
-    color: black;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    font-size: 1rem;
-    transition: all 1s ease-in-out;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 1rem;
+  transition: all 1s ease-in-out;
 }
-                                                        /* content button */
+/* content button */
 .curriculum-text .button-cv:hover .cv {
-    color: white;
+  color: white;
 }
 
-
-.curriculum-text .button-cv .cv i{
-    color: black;
-    font-size: 1rem;
-    vertical-align: auto;
-    margin-left: 10px;
-    transition: all 1s ease-in-out;
+.curriculum-text .button-cv .cv i {
+  color: black;
+  font-size: 1rem;
+  vertical-align: auto;
+  margin-left: 10px;
+  transition: all 1s ease-in-out;
 }
-
 
 .curriculum-text .button-cv:hover .cv i {
-    color: white;
-    margin-left: 100px;
+  color: white;
+  margin-left: 100px;
 }
-    
 
-    
-    .dev-img img {
-    height: auto;   
-    filter: sepia(0.3) contrast(1.2) brightness(0.9); 
-    width: 300px;
-    border-radius: 50%;
-    transition: all 200ms linear;
-    opacity: 0.9;
+.dev-img img {
+  height: auto;
+  filter: sepia(0.3) contrast(1.2) brightness(0.9);
+  width: 300px;
+  border-radius: 50%;
+  transition: all 200ms linear;
+  opacity: 0.9;
 }
 
 .dev-img img:hover {
-    opacity: 0.6;
+  opacity: 0.6;
 }
 
 .networks-wrapper {
-    position: absolute;
-    top: 40%;
-    padding: 0 20px;
+  position: absolute;
+  top: 40%;
+  padding: 0 20px;
 }
 
 .networks-wrapper a {
-    display: block;
-    margin: 30px 0;
-    font-size: 1.5rem;
-    transition: all .2s ease;
-    cursor: pointer;
+  display: block;
+  margin: 30px 0;
+  font-size: 1.5rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
 }
 
 .networks-wrapper a:hover {
-    transform: translateY(-3px);
-    background: transparent;
-    border-radius: 50%;
-    padding: 5px;
-    box-shadow: 0.5px -0.9px 10px 0 white;
+  transform: translateY(-3px);
+  background: transparent;
+  border-radius: 50%;
+  padding: 5px;
+  box-shadow: 0.5px -0.9px 10px 0 white;
 }
 
-
 .scroll-down {
-    position: absolute;
-    bottom: 9%;
-    right: 5%;
-    transition: all .5s ease-in-out;
-    background-color: rgba(255, 255, 255, 0.169);
-    border-radius: 50%;
-    vertical-align: middle;
-    padding: 5px;
-    cursor: pointer;
+  position: absolute;
+  bottom: 9%;
+  right: 5%;
+  transition: all 0.5s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.169);
+  border-radius: 50%;
+  vertical-align: middle;
+  padding: 5px;
+  cursor: pointer;
 }
 
 .scroll-down:hover {
-    transform: translateY(10px);
-    box-shadow: 0.2px 3px 6px 0 white;
-    border-radius: 50%;
-
+  transform: translateY(10px);
+  box-shadow: 0.2px 3px 6px 0 white;
+  border-radius: 50%;
 }
 
 .scroll-down i {
-    font-size: 2.5rem;
-    color: white;
+  font-size: 2.5rem;
+  color: white;
 }
-
 
 /* Estilos generales ------------------------------------*/
 .skills-section {
-    padding: 60px 0;
-    background: linear-gradient(90deg, rgba(110,60,3,1) 0%, rgba(121,86,9,1) 35%, rgba(160,117,31,1) 100%);    text-align: center;
-    font-family: Poppins;
+  padding: 60px 0;
+  background: linear-gradient(
+    90deg,
+    rgba(110, 60, 3, 1) 0%,
+    rgba(121, 86, 9, 1) 35%,
+    rgba(160, 117, 31, 1) 100%
+  );
+  text-align: center;
+  font-family: Poppins;
 }
 
 .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .section-title {
-    margin-bottom: 40px;
-    color: white;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 1.5rem;
-    letter-spacing: -1px;
+  margin-bottom: 40px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: -1px;
 }
 
 .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 18px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 18px;
 }
 
 .skill-card {
-    background-color: rgba(0, 0, 0, 0.502);
-    color: white;
-    padding: 15px;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.502);
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
 }
 
 .skill-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 3px 2px 8px 0.1px rgb(0, 0, 0);
-
+  transform: translateY(-10px);
+  box-shadow: 3px 2px 8px 0.1px rgb(0, 0, 0);
 }
 
 .skill-icon {
-    font-size: 1rem;
-    margin-bottom: 10px;
-    color: white
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: white;
 }
 
 .skill-icon i {
-    color: rgb(255, 203, 91);
+  color: rgb(255, 203, 91);
 }
 
 .skill-name {
-    color: white;
-    font-weight: 200;
-    font-size: 12px;
+  color: white;
+  font-weight: 200;
+  font-size: 12px;
 }
 
 /* Estilos generales */
 .certifications-section {
-    padding: 40px 0;
-    background: linear-gradient(234.9deg, rgb(113, 72, 18) 0%, rgb(67, 52, 11) 25%, rgb(65, 43, 9) 75% );
-    text-align: center;
+  padding: 40px 0;
+  background: linear-gradient(
+    234.9deg,
+    rgb(113, 72, 18) 0%,
+    rgb(67, 52, 11) 25%,
+    rgb(65, 43, 9) 75%
+  );
+  text-align: center;
 }
 
 .certifications-section .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .certifications-section .section-title {
-    font-size: 2rem;
-    margin-bottom: 40px;
-    color: white;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 1.5rem;
-    letter-spacing: -1px;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: -1px;
 }
 
 .certifications-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 
 .certification-card {
-    background-color: #00000076;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+  background-color: #00000076;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
 .certification-card:hover {
-    transform: translateY(-10px);
+  transform: translateY(-10px);
 }
 
 .certification-title {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    color: white;
-    font-weight: 300;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: white;
+  font-weight: 300;
 }
 
 .certification-institution {
-    font-size: 14px;
-    color: white;
-    text-transform: uppercase;
-    font-weight: 600;
-    margin-bottom: 10px;
+  font-size: 14px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .certification-date {
-    font-size: 11px;
-    font-weight: 100;
-    color: white;
-    margin-bottom: 15px;
+  font-size: 11px;
+  font-weight: 100;
+  color: white;
+  margin-bottom: 15px;
 }
 
 .certification-link {
-    display: inline-block;
-    font-size: 11px;
-    font-weight: 300;
-    padding: 10px 20px;
-    background-color: #97650a;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 10px;
-    transition: background-color 0.3s ease;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 300;
+  padding: 10px 20px;
+  background-color: #97650a;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
 }
 
 .certification-link:hover {
-    background-color: rgb(255, 214, 100);
-    color: black
+  background-color: rgb(255, 214, 100);
+  color: black;
 }
 
-@media (max-width: 992px) { 
-    .dev-img img {
-        width: 300px;
-    }
+@media (max-width: 992px) {
+  .curriculum-text .button-cv {
+    margin-bottom: 45px;
+  }
 
+  .dev-img img {
+    width: 300px;
+  }
 
-    .curriculum-text p {
-        width: 100%;
-        font-size: 14px;
-    }
+  .curriculum-text p {
+    width: 100%;
+    font-size: 14px;
+  }
 
-    .curriculum-text {
-        margin-left: 0;
-        padding: 50px 50px 0 50px;
-    } 
+  .curriculum-text {
+    margin-left: 0;
+    padding: 50px 50px 0 50px;
+  }
 
-    .networks-wrapper {
-        background-color: #885c0bcb;
-        display: flex;
-        position: static;
-        align-items: center;
-        justify-content: space-evenly;
-    }
+  .networks-wrapper {
+    background-color: #885c0bcb;
+    display: flex;
+    position: static;
+    align-items: center;
+    justify-content: space-evenly;
+  }
 
-    .networks-wrapper a {
-        display: flex;
-        padding: 20px;
-        align-items: center;
-    }
+  .networks-wrapper a {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+  }
 
-    .curriculum-text .button-cv {
-        margin-bottom: 5%;
-    }
+  .curriculum-text .button-cv {
+    margin-bottom: 5%;
+  }
 
-    .curriculum-text h1 {
-        font-size: 1.5rem;
-    }
+  .curriculum-text h1 {
+    font-size: 1.5rem;
+  }
 
-    .curriculum-text h5 {
-        font-size: 0.8rem;
-    }
-
+  .curriculum-text h5 {
+    font-size: 0.8rem;
+  }
 }
-
 
 @media (max-width: 700px) {
-    .navlist {
-        display: none;
-    }
+  .curriculum-text .button-cv {
+    margin-bottom: 45px;
+  }
+  .navlist {
+    display: none;
+  }
 
-    .main-toggle {
-        display: block;
-    }
+  .main-toggle {
+    display: block;
+  }
 
-    .main-icon-action {
-        display: block;
-    }
+  .main-icon-action {
+    display: block;
+  }
 
-    .curriculum {
-        grid-template-columns: 1fr;
-        height: auto;
-    }
+  .curriculum {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
 
-    .dev-img {
-        margin-bottom: 10%;
-    }
+  .dev-img {
+    margin-bottom: 10%;
+  }
 
-    .scroll-down {
-        display: none;
-    }
+  .scroll-down {
+    display: none;
+  }
 }
 
-
 @media (max-width: 438px) {
-    .curriculum-text h5 {
-        font-size: 13px;
-    }
+  .curriculum-text .button-cv {
+    margin-bottom: 45px;
+  }
+
+  .curriculum-text h5 {
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 342px) {
+  .curriculum-text .button-cv {
+    margin-bottom: 45px;
+  }
 
-    .curriculum-text .button-cv {
-        margin-bottom: 45px;
-    
-}  
+  .dev-img img {
+    width: 200px;
+  }
 
-    .dev-img img {
-        width: 200px;
-    }
+  .curriculum-text p {
+    font-size: 12px;
+  }
 
-    .curriculum-text p {
-        font-size: 12px;
-    }
+  .curriculum-text h4 {
+    font-size: 12px;
+  }
 
-    .curriculum-text h4 {
-        font-size: 12px;
-    }
-
-    .curriculum-text h1 {
-        font-size: 1rem;
-    }
+  .curriculum-text h1 {
+    font-size: 1rem;
+  }
 }
-
